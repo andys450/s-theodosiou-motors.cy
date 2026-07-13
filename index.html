@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+
+    <link rel="stylesheet" href="style.css">
+<script defer src="language.js"></script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -59,17 +63,6 @@
         <!-- LANGUAGE BUTTON -->
         <!-- English page -> Greek flag -> Opens Greek homepage -->
 
-        <button class="language-toggle"
-                type="button"
-                onclick="window.location.href='index-gr.html'"
-                aria-label="Αλλαγή στα Ελληνικά"
-                title="Αλλαγή στα Ελληνικά">
-
-            <img src="images/flags/gr.png"
-                 class="language-flag"
-                 alt="Ελληνικά">
-
-        </button>
 
 
         <h1>
@@ -78,6 +71,18 @@
 
 
         <nav>
+
+            <div aria-label="Language selection" class="language-switcher">
+    <button aria-label="Ελληνικά" data-lang="el" type="button">
+        <img alt="" src="images/flag-gr.png">
+        <span>ΕΛ</span>
+    </button>
+
+    <button aria-label="English" data-lang="en" type="button">
+        <img alt="" src="images/flag-uk.png">
+        <span>EN</span>
+    </button>
+</div>
 
             <a href="index.html">
                 Home
